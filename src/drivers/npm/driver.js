@@ -15,7 +15,7 @@ const { CHROMIUM_BIN, CHROMIUM_DATA_DIR, CHROMIUM_WEBSOCKET } = process.env
 const chromiumArgs = [
   '--no-sandbox',
   '--no-zygote',
-  'window-size=1280x768'
+  'window-size=1280x768',
   '--disable-gpu',
   '--ignore-certificate-errors',
   '--allow-running-insecure-content',
