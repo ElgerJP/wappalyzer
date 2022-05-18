@@ -21,9 +21,9 @@ const chromiumArgs = [
   '--allow-running-insecure-content',
   '--disable-web-security',
   '--single-process',
-  '--disable-dev-tools'
-  '--headless'
-  '--disable-dev-shm-usage'
+  '--disable-dev-tools',
+  '--headless',
+  '--disable-dev-shm-usage',
   '--user-data-dir=/tmp/chromium',
 ]
 
