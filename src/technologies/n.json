@@ -1,4 +1,12 @@
 {
+  "NeoAssist": {
+    "description": "Omnichannel platform for customer service.",
+    "cats": [
+      1
+    ],
+    "html": "neoassist",
+    "sass": true
+  },
   "NACEX": {
     "cats": [
       99
