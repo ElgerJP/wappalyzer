@@ -15,16 +15,17 @@ const { CHROMIUM_BIN, CHROMIUM_DATA_DIR, CHROMIUM_WEBSOCKET } = process.env
 const chromiumArgs = [
   '--no-sandbox',
   '--no-zygote',
+  'window-size=1280x768',
   '--disable-gpu',
   '--ignore-certificate-errors',
   '--allow-running-insecure-content',
   '--disable-web-security',
-  `--user-data-dir=${CHROMIUM_DATA_DIR || '/tmp/chromium'}`,
+  '--single-process',
+  '--disable-dev-tools',
+  '--headless',
+  '--disable-dev-shm-usage',
+  '--user-data-dir=/tmp/chromium',
 ]
-
-if (os.arch() === 'arm64') {
-  chromiumArgs.push('--single-process')
-}
 
 const extensions = /^([^.]+$|\.(asp|aspx|cgi|htm|html|jsp|php)$)/
 
