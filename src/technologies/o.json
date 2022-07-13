@@ -1,4 +1,14 @@
 {
+  "Omnibees": {
+    "description": "Omnichannel platform for hotels.",
+    "cats": [
+      1
+    ],
+    "html": "omnibees",
+    "sass": true,
+    "oss": false,
+    "website": "https://omnibees.com/"
+  },
   "OVHcloud": {
     "cats": [
       62,
